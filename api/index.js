@@ -13,7 +13,11 @@ const cors  = require("cors");
 
 app.use(cors(
 {
+<<<<<<< HEAD
   origin:[""],
+=======
+  origin:["https://story-spires-front.vercel.app/"],
+>>>>>>> 2ffa5445fa7355838f25c626e11c472f8789d95c
   methods:["POST","GET","PUT","DELETE"],
   Credentials:true
 }
