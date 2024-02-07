@@ -9,6 +9,15 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
+const cors  = require("cors");
+
+app.use(cors(
+{
+  origin:[],
+  methods:["POST","GET","PUT","DELETE"],
+  Credentials:true
+}
+));
 
 dotenv.config();
 app.use(express.json());
